@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="snap_game" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS4-mh-IzT">
+                                <rect key="frame" x="150" y="282.5" width="300" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="GZB-AL-xpp"/>
+                                    <constraint firstAttribute="height" constant="35" id="wvy-1i-AXN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Medium">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mediumPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Clo-05-1Qm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL1-K8-bvi">
+                                <rect key="frame" x="150" y="239" width="300" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="DsV-tA-0fK"/>
+                                    <constraint firstAttribute="height" constant="30" id="NeK-M5-DzV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Easy">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DsV-tA-0fK"/>
+                                        <exclude reference="NeK-M5-DzV"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="easyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bi3-SH-ku9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esx-2i-WhO">
+                                <rect key="frame" x="150" y="325" width="300" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="E1J-Yu-dXb"/>
+                                    <constraint firstAttribute="height" constant="30" id="FUv-9B-Oqm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Hard">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="E1J-Yu-dXb"/>
+                                        <exclude reference="FUv-9B-Oqm"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="hardPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qUi-34-pmZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9n-YE-y0Q">
+                                <rect key="frame" x="249" y="170" width="103" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="z3H-yh-5rb"/>
+                                    <constraint firstAttribute="height" constant="44" id="zrZ-E8-Yqe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="esx-2i-WhO" firstAttribute="top" secondItem="zS4-mh-IzT" secondAttribute="bottom" constant="8" id="1RH-MC-kTr"/>
+                            <constraint firstItem="j9n-YE-y0Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="24Z-0z-NVp"/>
+                            <constraint firstItem="esx-2i-WhO" firstAttribute="width" secondItem="zS4-mh-IzT" secondAttribute="width" id="Ecg-vu-TUb"/>
+                            <constraint firstItem="esx-2i-WhO" firstAttribute="centerX" secondItem="zS4-mh-IzT" secondAttribute="centerX" id="Njg-Ex-6cU"/>
+                            <constraint firstItem="zS4-mh-IzT" firstAttribute="top" secondItem="uL1-K8-bvi" secondAttribute="bottom" constant="8" id="QRd-TP-Ywy"/>
+                            <constraint firstItem="zS4-mh-IzT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="STx-xs-hFh"/>
+                            <constraint firstItem="esx-2i-WhO" firstAttribute="height" secondItem="zS4-mh-IzT" secondAttribute="height" id="W2o-E5-Mcb"/>
+                            <constraint firstItem="zS4-mh-IzT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ayb-bt-ugr"/>
+                            <constraint firstItem="uL1-K8-bvi" firstAttribute="top" secondItem="j9n-YE-y0Q" secondAttribute="bottom" constant="25" id="fGE-Xn-Xqv"/>
+                            <constraint firstItem="zS4-mh-IzT" firstAttribute="width" secondItem="uL1-K8-bvi" secondAttribute="width" id="ibp-Yq-11Q"/>
+                            <constraint firstItem="zS4-mh-IzT" firstAttribute="height" secondItem="uL1-K8-bvi" secondAttribute="height" id="ljN-it-A7w"/>
+                            <constraint firstItem="uL1-K8-bvi" firstAttribute="centerX" secondItem="zS4-mh-IzT" secondAttribute="centerX" id="t5T-SV-GMz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="372"/>
+        </scene>
+    </scenes>
+</document>

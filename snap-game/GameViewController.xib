@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="snap_game" customModuleProvider="target">
+            <connections>
+                <outlet property="cardInPlayView" destination="hsV-kX-P19" id="Fvm-Vk-O6R"/>
+                <outlet property="playerOneButton" destination="pcV-Kq-XnN" id="cgg-r9-g7j"/>
+                <outlet property="previousCardInPlayView" destination="3Oo-kH-euQ" id="HnA-mf-Jhh"/>
+                <outlet property="view" destination="iN0-l3-epB" id="uqn-rL-gnc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcV-Kq-XnN">
+                    <rect key="frame" x="262" y="386" width="75" height="125"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Play">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="userPlayButtonPressed:" destination="-1" eventType="touchUpInside" id="gH8-Ka-TKP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoh-F0-CQw">
+                    <rect key="frame" x="262" y="64" width="75" height="125"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcn-qz-7iK">
+                    <rect key="frame" x="16" y="16" width="30" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <state key="normal" title="Quit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="quitButton:" destination="-1" eventType="touchUpInside" id="PhH-vq-5Tu"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsV-kX-P19" customClass="PlayerCardView" customModule="snap_game" customModuleProvider="target">
+                    <rect key="frame" x="250" y="237" width="75" height="125"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Oo-kH-euQ" customClass="PlayerCardView" customModule="snap_game" customModuleProvider="target">
+                            <rect key="frame" x="24" y="-24" width="75" height="125"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="3Oo-kH-euQ" firstAttribute="width" secondItem="hsV-kX-P19" secondAttribute="width" id="706-Vm-IZg"/>
+                        <constraint firstAttribute="bottom" secondItem="3Oo-kH-euQ" secondAttribute="bottom" constant="24" id="Fwr-4z-2S4"/>
+                        <constraint firstAttribute="height" constant="125" id="NhI-ux-tpr"/>
+                        <constraint firstItem="3Oo-kH-euQ" firstAttribute="leading" secondItem="hsV-kX-P19" secondAttribute="leading" constant="24" id="iua-vL-oAK"/>
+                        <constraint firstItem="3Oo-kH-euQ" firstAttribute="height" secondItem="hsV-kX-P19" secondAttribute="height" id="oer-ir-pGA"/>
+                        <constraint firstAttribute="width" constant="75" id="xyg-o4-V5f"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sH-m7-IYb" customClass="SnapButton" customModule="snap_game" customModuleProvider="target">
+                    <rect key="frame" x="345" y="424" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="SNa-0F-n5U"/>
+                        <constraint firstAttribute="width" constant="50" id="dUa-Tl-UY8"/>
+                    </constraints>
+                    <connections>
+                        <action selector="userSnapButtonPressed:" destination="-1" eventType="touchUpInside" id="lKs-VA-Cjb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pcV-Kq-XnN" firstAttribute="width" secondItem="hsV-kX-P19" secondAttribute="width" id="4zW-4C-WxR"/>
+                <constraint firstItem="hsV-kX-P19" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-12" id="7PH-u6-VmO"/>
+                <constraint firstItem="hoh-F0-CQw" firstAttribute="width" secondItem="hsV-kX-P19" secondAttribute="width" id="AfZ-5U-uKm"/>
+                <constraint firstItem="pcV-Kq-XnN" firstAttribute="top" secondItem="hsV-kX-P19" secondAttribute="bottom" constant="24" id="Hq0-j2-Xxv"/>
+                <constraint firstItem="pcV-Kq-XnN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IzJ-iC-ccU"/>
+                <constraint firstItem="3sH-m7-IYb" firstAttribute="leading" secondItem="pcV-Kq-XnN" secondAttribute="trailing" constant="8" id="TiX-Jj-HRK"/>
+                <constraint firstItem="hoh-F0-CQw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UQ4-mR-YDx"/>
+                <constraint firstItem="3Oo-kH-euQ" firstAttribute="top" secondItem="hoh-F0-CQw" secondAttribute="bottom" constant="24" id="bkg-sD-DHa"/>
+                <constraint firstItem="pcV-Kq-XnN" firstAttribute="height" secondItem="hsV-kX-P19" secondAttribute="height" id="f2U-rZ-gPL"/>
+                <constraint firstItem="3sH-m7-IYb" firstAttribute="centerY" secondItem="pcV-Kq-XnN" secondAttribute="centerY" id="hGB-W5-77j"/>
+                <constraint firstItem="hoh-F0-CQw" firstAttribute="height" secondItem="hsV-kX-P19" secondAttribute="height" id="spq-Ok-4Ur"/>
+                <constraint firstItem="hsV-kX-P19" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="spq-tP-DT8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="189" y="80"/>
+        </view>
+    </objects>
+</document>
