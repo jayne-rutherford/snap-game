@@ -18,12 +18,12 @@
 		99C4F9ED1C4EE3C50061148C /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C4F9DE1C4DAAD80061148C /* Card.m */; };
 		99C4F9EF1C4EE63D0061148C /* DeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C4F9EE1C4EE63D0061148C /* DeckTests.m */; };
 		99C4FA0D1C4EEC490061148C /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C4FA011C4EEC490061148C /* libOCMock.a */; };
+		99C4FA101C4F01160061148C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4FA0F1C4F01160061148C /* ViewController.swift */; };
 		99F0513A1C4D830100E4A904 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F051391C4D830100E4A904 /* main.m */; };
 		99F0513D1C4D830100E4A904 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F0513C1C4D830100E4A904 /* AppDelegate.m */; };
 		99F051431C4D830100E4A904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F051411C4D830100E4A904 /* Main.storyboard */; };
 		99F051451C4D830100E4A904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F051441C4D830100E4A904 /* Assets.xcassets */; };
 		99F051481C4D830100E4A904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F051461C4D830100E4A904 /* LaunchScreen.storyboard */; };
-		99F0515F1C4D855B00E4A904 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0515E1C4D855B00E4A904 /* ViewController.swift */; };
 		99F051611C4D86D700E4A904 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F051601C4D86D700E4A904 /* GameViewController.swift */; };
 		99F051631C4D874B00E4A904 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99F051621C4D874B00E4A904 /* GameViewController.xib */; };
 /* End PBXBuildFile section */
@@ -60,6 +60,8 @@
 		99C4FA0A1C4EEC490061148C /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		99C4FA0B1C4EEC490061148C /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
 		99C4FA0C1C4EEC490061148C /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		99C4FA0E1C4F01160061148C /* snap-game-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snap-game-Bridging-Header.h"; sourceTree = "<group>"; };
+		99C4FA0F1C4F01160061148C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99F051351C4D830100E4A904 /* snap-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "snap-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F051391C4D830100E4A904 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99F0513B1C4D830100E4A904 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,8 +72,6 @@
 		99F051491C4D830100E4A904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99F0514E1C4D830100E4A904 /* snap-gameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "snap-gameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F051541C4D830100E4A904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99F0515D1C4D855B00E4A904 /* snap-game-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "snap-game-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		99F0515E1C4D855B00E4A904 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		99F051601C4D86D700E4A904 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		99F051621C4D874B00E4A904 /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				99F051411C4D830100E4A904 /* Main.storyboard */,
-				99F0515E1C4D855B00E4A904 /* ViewController.swift */,
+				99C4FA0F1C4F01160061148C /* ViewController.swift */,
 				99F051621C4D874B00E4A904 /* GameViewController.xib */,
 				99F051601C4D86D700E4A904 /* GameViewController.swift */,
 				99C4F9D71C4D97AB0061148C /* PlayerCardView.xib */,
@@ -189,12 +189,12 @@
 		99F051381C4D830100E4A904 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				99C4FA0E1C4F01160061148C /* snap-game-Bridging-Header.h */,
 				99F051491C4D830100E4A904 /* Info.plist */,
 				99F0513B1C4D830100E4A904 /* AppDelegate.h */,
 				99F0513C1C4D830100E4A904 /* AppDelegate.m */,
 				99F051461C4D830100E4A904 /* LaunchScreen.storyboard */,
 				99F051391C4D830100E4A904 /* main.m */,
-				99F0515D1C4D855B00E4A904 /* snap-game-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -310,10 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C4FA101C4F01160061148C /* ViewController.swift in Sources */,
 				99C4F9E21C4DAAD80061148C /* Deck.m in Sources */,
 				99C4F9E71C4E758B0061148C /* SnapButton.swift in Sources */,
 				99F051611C4D86D700E4A904 /* GameViewController.swift in Sources */,
-				99F0515F1C4D855B00E4A904 /* ViewController.swift in Sources */,
 				99F0513D1C4D830100E4A904 /* AppDelegate.m in Sources */,
 				99F0513A1C4D830100E4A904 /* main.m in Sources */,
 				99C4F9E51C4DAB1A0061148C /* Hand.m in Sources */,
@@ -454,7 +454,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rutherford.snap-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "snap-game-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/snap-game/snap-game-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -468,7 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "rutherford.snap-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "snap-game-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/snap-game/snap-game-Bridging-Header.h";
 			};
 			name = Release;
 		};
